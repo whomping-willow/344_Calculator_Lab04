@@ -43,7 +43,14 @@ public class MainActivity extends AppCompatActivity {
         btnSeven = findViewById(R.id.btnSeven);
         btnEight = findViewById(R.id.btnEight);
         btnNine = findViewById(R.id.btnNine);
-
+        btnDecimal.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                edtNumber.setText(edtNumber.getText()+".");
+            }
+        });
         btnZero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
